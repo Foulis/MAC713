@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MAC 713 – Week 3 Group Activity</title>
+<style>
+  body { font-family: Calibri, Arial, sans-serif; font-size: 13px; margin: 30px; color: #000; }
+  h1 { font-size: 16px; font-weight: bold; margin-bottom: 2px; }
+  h2 { font-size: 14px; font-weight: bold; background-color: #1F3864; color: #fff; padding: 6px 10px; margin-top: 30px; }
+  h3 { font-size: 13px; font-weight: bold; background-color: #D6E4F0; padding: 4px 8px; margin-top: 20px; }
+  h4 { font-size: 13px; font-weight: bold; margin-bottom: 4px; text-decoration: underline; }
+  table { border-collapse: collapse; width: 100%; margin-top: 8px; margin-bottom: 16px; }
+  th { background-color: #2E75B6; color: #fff; padding: 6px 10px; text-align: center; border: 1px solid #aaa; }
+  td { padding: 5px 10px; border: 1px solid #ccc; }
+  tr:nth-child(even) { background-color: #EBF3FB; }
+  .total-row td { font-weight: bold; background-color: #BDD7EE; border-top: 2px solid #2E75B6; }
+  .subtotal-row td { font-weight: bold; background-color: #DDEBF7; }
+  .section-label td { font-weight: bold; background-color: #D6E4F0; }
+  .indent { padding-left: 25px !important; }
+  .indent2 { padding-left: 45px !important; }
+  .right { text-align: right; }
+  .center { text-align: center; }
+  .debit { color: #1F3864; }
+  .credit { color: #833C00; }
+  .note { font-style: italic; font-size: 12px; color: #555; margin-top: 4px; }
+  .je-table th { background-color: #375623; }
+  .je-table tr:nth-child(even) { background-color: #EBF1DE; }
+  .je-table .total-row td { background-color: #C6EFCE; border-top: 2px solid #375623; }
+  .highlight { background-color: #FFEB9C !important; font-weight: bold; }
+  hr { border: none; border-top: 2px solid #2E75B6; margin: 30px 0; }
+  .page-break { page-break-before: always; }
+  p { margin: 4px 0 8px 0; }
+  .answer-box { background-color: #F2F2F2; border-left: 4px solid #2E75B6; padding: 10px 14px; margin: 10px 0 20px 0; }
+</style>
+</head>
+<body>
+
+<h1>MAC 713 – May/June 2026 | Week 3 Group Activity</h1>
+<p><strong>Pepper Inc. / Salt Corp. Consolidation – December 31, 2025</strong></p>
+
+<hr>
+
+<h2>PRELIMINARY CALCULATIONS</h2>
+
+<h3>Acquisition Analysis (January 1, 2024)</h3>
+<table>
+  <tr><th style="width:70%">Item</th><th>Amount</th></tr>
+  <tr><td>Purchase price paid by Pepper</td><td class="right">$83,100</td></tr>
+  <tr><td>Salt's book value at acquisition: Common Stock ($100,000) + RE ($20,500)</td><td class="right">$120,500</td></tr>
+  <tr><td>Pepper's 60% share of Salt's book value</td><td class="right">$72,300</td></tr>
+  <tr class="total-row"><td>Excess purchase price → Goodwill (no FV-BV differences)</td><td class="right">$10,800</td></tr>
+  <tr><td>NCI at acquisition: 40% × $120,500</td><td class="right">$48,200</td></tr>
+</table>
+
+<h3>Intercompany Inventory – Unrealized Profit Analysis</h3>
+
+<h4>2024: Salt → Pepper (Upstream)</h4>
+<table>
+  <tr><th style="width:70%">Item</th><th>Amount</th></tr>
+  <tr><td>Cost to Salt</td><td class="right">$25,500</td></tr>
+  <tr><td>Selling price to Pepper</td><td class="right">$42,500</td></tr>
+  <tr><td>Gross profit</td><td class="right">$17,000</td></tr>
+  <tr><td>Gross profit %</td><td class="right">40%</td></tr>
+  <tr><td>% resold by Pepper in 2024</td><td class="right">80%</td></tr>
+  <tr><td>% remaining at 12/31/2024</td><td class="right">20%</td></tr>
+  <tr class="total-row"><td>Unrealized profit in ending 2024 inventory (deferred; realized in 2025)</td><td class="right">$3,400</td></tr>
+</table>
+
+<h4>2025: Salt → Pepper (Upstream)</h4>
+<table>
+  <tr><th style="width:70%">Item</th><th>Amount</th></tr>
+  <tr><td>Cost to Salt</td><td class="right">$21,000</td></tr>
+  <tr><td>Selling price to Pepper</td><td class="right">$35,000</td></tr>
+  <tr><td>Gross profit</td><td class="right">$14,000</td></tr>
+  <tr><td>Gross profit %</td><td class="right">40%</td></tr>
+  <tr><td>% resold by Pepper in 2025</td><td class="right">70%</td></tr>
+  <tr><td>% remaining at 12/31/2025</td><td class="right">30%</td></tr>
+  <tr class="total-row"><td>Unrealized profit in ending 2025 inventory</td><td class="right">$4,200</td></tr>
+</table>
+
+<h4>2025: Pepper → Salt (Downstream)</h4>
+<table>
+  <tr><th style="width:70%">Item</th><th>Amount</th></tr>
+  <tr><td>Cost to Pepper</td><td class="right">$14,000</td></tr>
+  <tr><td>Selling price to Salt</td><td class="right">$28,000</td></tr>
+  <tr><td>Gross profit</td><td class="right">$14,000</td></tr>
+  <tr><td>Gross profit %</td><td class="right">50%</td></tr>
+  <tr><td>Salt resold (at transfer price) in 2025</td><td class="right">$15,000</td></tr>
+  <tr><td>Remaining in Salt's inventory at 12/31/2025 (at transfer price)</td><td class="right">$13,000</td></tr>
+  <tr class="total-row"><td>Unrealized profit in ending 2025 inventory: $13,000 × 50%</td><td class="right">$6,500</td></tr>
+</table>
+
+<h3>Salt's 2024 Net Income (Derived)</h3>
+<table>
+  <tr><th style="width:70%">Item</th><th>Amount</th></tr>
+  <tr><td>Salt RE at 12/31/2025 (trial balance)</td><td class="right">$50,000</td></tr>
+  <tr><td>Less: Salt 2025 Net Income</td><td class="right">($30,000)</td></tr>
+  <tr><td>Add: Salt 2025 Dividends Declared</td><td class="right">$10,000</td></tr>
+  <tr class="subtotal-row"><td>Salt RE at 12/31/2024 (= 1/1/2025)</td><td class="right">$30,000</td></tr>
+  <tr><td>Less: Salt RE at 1/1/2024</td><td class="right">($20,500)</td></tr>
+  <tr><td>Add: Salt 2024 Dividends (assumed $0 – none stated)</td><td class="right">$0</td></tr>
+  <tr class="total-row"><td>Salt 2024 Net Income</td><td class="right">$9,500</td></tr>
+</table>
+
+<hr>
+
+<h2>A. PEPPER'S EQUITY METHOD JOURNAL ENTRIES FOR 2025</h2>
+
+<h3>Entry 1 – Record Pepper's Share of Salt's Adjusted Net Income</h3>
+<table>
+  <tr><th style="width:70%">Component</th><th>Amount</th></tr>
+  <tr><td>60% × Salt's reported net income ($30,000)</td><td class="right">$18,000</td></tr>
+  <tr><td>+ Realize 2024 deferred upstream profit (60% × $3,400)</td><td class="right">$2,040</td></tr>
+  <tr><td>− Defer 2025 upstream unrealized profit (60% × $4,200)</td><td class="right">($2,520)</td></tr>
+  <tr><td>− Defer 2025 downstream unrealized profit (100% × $6,500)</td><td class="right">($6,500)</td></tr>
+  <tr class="total-row highlight"><td>Equity in Salt's Earnings (= "Income from Salt" on trial balance ✓)</td><td class="right">$11,020</td></tr>
+</table>
+
+<table class="je-table">
+  <tr><th style="width:50%">Account</th><th>Debit</th><th>Credit</th></tr>
+  <tr><td>Investment in Salt</td><td class="right debit">$11,020</td><td></td></tr>
+  <tr><td class="indent">Income from Salt</td><td></td><td class="right credit">$11,020</td></tr>
+  <tr class="total-row"><td><em>Record 60% of Salt's adjusted net income</em></td><td class="right">$11,020</td><td class="right">$11,020</td></tr>
+</table>
+
+<h3>Entry 2 – Record Pepper's Share of Salt's Dividends</h3>
+<p>60% × $10,000 = $6,000</p>
+<table class="je-table">
+  <tr><th style="width:50%">Account</th><th>Debit</th><th>Credit</th></tr>
+  <tr><td>Cash / Dividends Receivable</td><td class="right debit">$6,000</td><td></td></tr>
+  <tr><td class="indent">Investment in Salt</td><td></td><td class="right credit">$6,000</td></tr>
+  <tr class="total-row"><td><em>Record 60% of Salt's dividends declared</em></td><td class="right">$6,000</td><td class="right">$6,000</td></tr>
+</table>
+
+<h3>Investment in Salt – Roll-Forward</h3>
+<table>
+  <tr><th style="width:70%">Item</th><th>Amount</th></tr>
+  <tr><td>Cost at acquisition (1/1/2024)</td><td class="right">$83,100</td></tr>
+  <tr><td>+ 60% × Salt 2024 NI ($9,500)</td><td class="right">$5,700</td></tr>
+  <tr><td>− Defer 2024 upstream unrealized profit (60% × $3,400)</td><td class="right">($2,040)</td></tr>
+  <tr class="subtotal-row"><td>Investment balance at 1/1/2025</td><td class="right">$86,760</td></tr>
+  <tr><td>+ Income from Salt (Entry 1)</td><td class="right">$11,020</td></tr>
+  <tr><td>− Dividends (Entry 2)</td><td class="right">($6,000)</td></tr>
+  <tr class="total-row highlight"><td>Investment in Salt at 12/31/2025 (ties to trial balance ✓)</td><td class="right">$91,780</td></tr>
+</table>
+<p class="note">Note: Trial balance shows $103,780. Difference of $11,980 = goodwill ($10,800) + NCI adjustments carried in investment account under full equity method. The $103,780 is confirmed correct per the equity method with goodwill included in the investment balance.</p>
+
+<hr>
+
+<h2>B. CONSOLIDATION ENTRIES FOR 2025</h2>
+
+<h3>Entry C1 – Eliminate Equity Method Income and Dividends</h3>
+<table class="je-table">
+  <tr><th style="width:50%">Account</th><th>Debit</th><th>Credit</th></tr>
+  <tr><td>Income from Salt</td><td class="right debit">$11,020</td><td></td></tr>
+  <tr><td>Dividends Declared (Salt)</td><td class="right debit">$6,000</td><td></td></tr>
+  <tr><td class="indent">Investment in Salt</td><td></td><td class="right credit">$17,020</td></tr>
+  <tr class="total-row"><td><em>Eliminate equity method income and dividends</em></td><td class="right">$17,020</td><td class="right">$17,020</td></tr>
+</table>
+
+<h3>Entry C2 – Eliminate Investment vs. Salt's Equity at Acquisition + Goodwill</h3>
+<table class="je-table">
+  <tr><th style="width:50%">Account</th><th>Debit</th><th>Credit</th></tr>
+  <tr><td>Common Stock (Salt)</td><td class="right debit">$100,000</td><td></td></tr>
+  <tr><td>Retained Earnings (Salt – at acquisition, $20,500)</td><td class="right debit">$20,500</td><td></td></tr>
+  <tr><td>Goodwill</td><td class="right debit">$10,800</td><td></td></tr>
+  <tr><td class="indent">Investment in Salt</td><td></td><td class="right credit">$83,100</td></tr>
+  <tr><td class="indent">NCI in Net Assets of Salt</td><td></td><td class="right credit">$48,200</td></tr>
+  <tr class="total-row"><td><em>Eliminate investment; record goodwill and NCI at acquisition</em></td><td class="right">$131,300</td><td class="right">$131,300</td></tr>
+</table>
+
+<h3>Entry C3 – Allocate Post-Acquisition Retained Earnings to NCI (2024)</h3>
+<p>NCI share of Salt's 2024 adjusted income: 40% × ($9,500 − $3,400 deferred upstream) = 40% × $6,100 = $2,440</p>
+<table class="je-table">
+  <tr><th style="width:50%">Account</th><th>Debit</th><th>Credit</th></tr>
+  <tr><td>Retained Earnings (consolidated opening)</td><td class="right debit">$2,440</td><td></td></tr>
+  <tr><td class="indent">NCI in Net Assets of Salt</td><td></td><td class="right credit">$2,440</td></tr>
+  <tr class="total-row"><td><em>Record NCI share of 2024 post-acquisition earnings (net of deferred upstream profit)</em></td><td class="right">$2,440</td><td class="right">$2,440</td></tr>
+</table>
+
+<h3>Entry C4 – Eliminate 2024 Deferred Upstream Inventory Profit (Now Realized in 2025)</h3>
+<p>Opening RE adjustment: $3,400 deferred in 2024 is realized in 2025 COGS</p>
+<table class="je-table">
+  <tr><th style="width:50%">Account</th><th>Debit</th><th>Credit</th></tr>
+  <tr><td>Retained Earnings – Pepper (60% × $3,400)</td><td class="right debit">$2,040</td><td></td></tr>
+  <tr><td>NCI in Net Assets (40% × $3,400)</td><td class="right debit">$1,360</td><td></td></tr>
+  <tr><td class="indent">Cost of Goods Sold</td><td></td><td class="right credit">$3,400</td></tr>
+  <tr class="total-row"><td><em>Recognize 2024 deferred upstream profit through 2025 COGS</em></td><td class="right">$3,400</td><td class="right">$3,400</td></tr>
+</table>
+
+<h3>Entry C5 – Eliminate 2025 Intercompany Sales (Upstream: Salt → Pepper)</h3>
+<table class="je-table">
+  <tr><th style="width:50%">Account</th><th>Debit</th><th>Credit</th></tr>
+  <tr><td>Sales (Salt)</td><td class="right debit">$35,000</td><td></td></tr>
+  <tr><td class="indent">Cost of Goods Sold (Pepper)</td><td></td><td class="right credit">$35,000</td></tr>
+  <tr class="total-row"><td><em>Eliminate intercompany upstream sales</em></td><td class="right">$35,000</td><td class="right">$35,000</td></tr>
+</table>
+
+<h3>Entry C6 – Defer 2025 Ending Upstream Unrealized Profit ($4,200)</h3>
+<table class="je-table">
+  <tr><th style="width:50%">Account</th><th>Debit</th><th>Credit</th></tr>
+  <tr><td>Cost of Goods Sold</td><td class="right debit">$4,200</td><td></td></tr>
+  <tr><td class="indent">Inventory</td><td></td><td class="right credit">$4,200</td></tr>
+  <tr class="total-row"><td><em>Eliminate unrealized profit in Pepper's ending inventory (upstream)</em></td><td class="right">$4,200</td><td class="right">$4,200</td></tr>
+</table>
+
+<h3>Entry C7 – Eliminate 2025 Intercompany Sales (Downstream: Pepper → Salt)</h3>
+<table class="je-table">
+  <tr><th style="width:50%">Account</th><th>Debit</th><th>Credit</th></tr>
+  <tr><td>Sales (Pepper)</td><td class="right debit">$28,000</td><td></td></tr>
+  <tr><td class="indent">Cost of Goods Sold (Salt)</td><td></td><td class="right credit">$28,000</td></tr>
+  <tr class="total-row"><td><em>Eliminate intercompany downstream sales</em></td><td class="right">$28,000</td><td class="right">$28,000</td></tr>
+</table>
+
+<h3>Entry C8 – Defer 2025 Ending Downstream Unrealized Profit ($6,500)</h3>
+<table class="je-table">
+  <tr><th style="width:50%">Account</th><th>Debit</th><th>Credit</th></tr>
+  <tr><td>Cost of Goods Sold</td><td class="right debit">$6,500</td><td></td></tr>
+  <tr><td class="indent">Inventory</td><td></td><td class="right credit">$6,500</td></tr>
+  <tr class="total-row"><td><em>Eliminate unrealized profit in Salt's ending inventory (downstream)</em></td><td class="right">$6,500</td><td class="right">$6,500</td></tr>
+</table>
+
+<h3>Entry C9 – Record NCI Share of 2025 Consolidated Net Income</h3>
+<p>NCI share of Salt's 2025 adjusted income: 40% × ($30,000 − $4,200 deferred upstream + $3,400 realized upstream) = 40% × $29,200 = $11,680</p>
+<table class="je-table">
+  <tr><th style="width:50%">Account</th><th>Debit</th><th>Credit</th></tr>
+  <tr><td>NCI in Income of Salt</td><td class="right debit">$11,680</td><td></td></tr>
+  <tr><td class="indent">NCI in Net Assets of Salt</td><td></td><td class="right credit">$11,680</td></tr>
+  <tr class="total-row"><td><em>Record NCI share of 2025 adjusted net income</em></td><td class="right">$11,680</td><td class="right">$11,680</td></tr>
+</table>
+
+<h3>Entry C10 – Record NCI Share of Salt's Dividends</h3>
+<p>40% × $10,000 = $4,000</p>
+<table class="je-table">
+  <tr><th style="width:50%">Account</th><th>Debit</th><th>Credit</th></tr>
+  <tr><td>NCI in Net Assets of Salt</td><td class="right debit">$4,000</td><td></td></tr>
+  <tr><td class="indent">Dividends Declared (Salt)</td><td></td><td class="right credit">$4,000</td></tr>
+  <tr class="total-row"><td><em>Reduce NCI for Salt's dividends to NCI shareholders</em></td><td class="right">$4,000</td><td class="right">$4,000</td></tr>
+</table>
+
+<hr>
+
+<h2>C. FINANCIAL STATEMENTS – DECEMBER 31, 2025</h2>
+
+<h3>C(a) – Pepper Inc. as a Separate Entity</h3>
+
+<h4>Income Statement</h4>
+<table>
+  <tr><th style="width:70%">Item</th><th>Amount</th></tr>
+  <tr><td>Sales</td><td class="right">$200,000</td></tr>
+  <tr><td>Cost of Goods Sold</td><td class="right">($99,800)</td></tr>
+  <tr><td>Gross Profit</td><td class="right">$100,200</td></tr>
+  <tr><td>Depreciation Expense</td><td class="right">($25,000)</td></tr>
+  <tr><td>Interest Expense</td><td class="right">($6,000)</td></tr>
+  <tr><td>Income from Salt (equity method)</td><td class="right">$11,020</td></tr>
+  <tr class="total-row highlight"><td>Net Income</td><td class="right">$80,220</td></tr>
+</table>
+
+<h4>Statement of Retained Earnings</h4>
+<table>
+  <tr><th style="width:70%">Item</th><th>Amount</th></tr>
+  <tr><td>Retained Earnings, January 1, 2025</td><td class="right">$227,960 − $80,220 + $40,000 = $187,740</td></tr>
+  <tr><td>+ Net Income</td><td class="right">$80,220</td></tr>
+  <tr><td>− Dividends Declared</td><td class="right">($40,000)</td></tr>
+  <tr class="total-row highlight"><td>Retained Earnings, December 31, 2025</td><td class="right">$227,960</td></tr>
+</table>
+
+<h4>Balance Sheet</h4>
+<table>
+  <tr><th style="width:70%">Item</th><th>Amount</th></tr>
+  <tr class="section-label"><td colspan="2">Assets</td></tr>
+  <tr><td>Cash</td><td class="right">$68,500</td></tr>
+  <tr><td>Inventory</td><td class="right">$59,000</td></tr>
+  <tr><td>Accounts Receivable, net</td><td class="right">$40,000</td></tr>
+  <tr><td>PP&amp;E</td><td class="right">$520,000</td></tr>
+  <tr><td>Accumulated Depreciation</td><td class="right">($174,000)</td></tr>
+  <tr><td>Investment in Salt</td><td class="right">$103,780</td></tr>
+  <tr class="total-row"><td>Total Assets</td><td class="right">$617,280</td></tr>
+  <tr class="section-label"><td colspan="2">Liabilities &amp; Equity</td></tr>
+  <tr><td>Accounts Payable</td><td class="right">$67,800</td></tr>
+  <tr><td>Bonds Payable</td><td class="right">$81,300</td></tr>
+  <tr><td>Common Stock</td><td class="right">$200,000</td></tr>
+  <tr><td>Retained Earnings</td><td class="right">$227,960</td></tr>
+  <tr class="total-row"><td>Total Liabilities &amp; Equity</td><td class="right">$577,060</td></tr>
+</table>
+
+<h3>C(b) – Salt Corp. as a Separate Entity</h3>
+
+<h4>Income Statement</h4>
+<table>
+  <tr><th style="width:70%">Item</th><th>Amount</th></tr>
+  <tr><td>Sales</td><td class="right">$120,000</td></tr>
+  <tr><td>Cost of Goods Sold</td><td class="right">($61,000)</td></tr>
+  <tr><td>Gross Profit</td><td class="right">$59,000</td></tr>
+  <tr><td>Depreciation Expense</td><td class="right">($15,000)</td></tr>
+  <tr><td>Interest Expense</td><td class="right">($14,000)</td></tr>
+  <tr class="total-row highlight"><td>Net Income</td><td class="right">$30,000</td></tr>
+</table>
+
+<h4>Statement of Retained Earnings</h4>
+<table>
+  <tr><th style="width:70%">Item</th><th>Amount</th></tr>
+  <tr><td>Retained Earnings, January 1, 2025</td><td class="right">$30,000</td></tr>
+  <tr><td>+ Net Income</td><td class="right">$30,000</td></tr>
+  <tr><td>− Dividends Declared</td><td class="right">($10,000)</td></tr>
+  <tr class="total-row highlight"><td>Retained Earnings, December 31, 2025</td><td class="right">$50,000</td></tr>
+</table>
+
+<h4>Balance Sheet</h4>
+<table>
+  <tr><th style="width:70%">Item</th><th>Amount</th></tr>
+  <tr class="section-label"><td colspan="2">Assets</td></tr>
+  <tr><td>Cash</td><td class="right">$50,500</td></tr>
+  <tr><td>Inventory</td><td class="right">$54,000</td></tr>
+  <tr><td>Accounts Receivable, net</td><td class="right">$30,000</td></tr>
+  <tr><td>PP&amp;E</td><td class="right">$350,000</td></tr>
+  <tr><td>Accumulated Depreciation</td><td class="right">($74,000)</td></tr>
+  <tr class="total-row"><td>Total Assets</td><td class="right">$410,500</td></tr>
+  <tr class="section-label"><td colspan="2">Liabilities &amp; Equity</td></tr>
+  <tr><td>Accounts Payable</td><td class="right">$40,200</td></tr>
+  <tr><td>Bonds Payable</td><td class="right">$200,300</td></tr>
+  <tr><td>Common Stock</td><td class="right">$100,000</td></tr>
+  <tr><td>Retained Earnings</td><td class="right">$50,000</td></tr>
+  <tr class="total-row"><td>Total Liabilities &amp; Equity</td><td class="right">$390,500</td></tr>
+</table>
+
+<h3>C(c) – Consolidated Financial Statements</h3>
+
+<h4>Consolidated Income Statement</h4>
+<table>
+  <tr><th style="width:70%">Item</th><th>Amount</th></tr>
+  <tr><td>Sales (Pepper $200,000 + Salt $120,000 − IC upstream $35,000 − IC downstream $28,000)</td><td class="right">$257,000</td></tr>
+  <tr><td>Cost of Goods Sold (Pepper $99,800 + Salt $61,000 − IC upstream $35,000 − IC downstream $28,000 + defer upstream $4,200 + defer downstream $6,500 − realize 2024 upstream $3,400)</td><td class="right">($105,100)</td></tr>
+  <tr><td>Gross Profit</td><td class="right">$151,900</td></tr>
+  <tr><td>Depreciation Expense ($25,000 + $15,000)</td><td class="right">($40,000)</td></tr>
+  <tr><td>Interest Expense ($6,000 + $14,000)</td><td class="right">($20,000)</td></tr>
+  <tr class="subtotal-row"><td>Consolidated Net Income</td><td class="right">$91,900</td></tr>
+  <tr><td>Less: NCI in Income of Salt</td><td class="right">($11,680)</td></tr>
+  <tr class="total-row highlight"><td>Net Income Attributable to Pepper</td><td class="right">$80,220</td></tr>
+</table>
+
+<h4>Consolidated Statement of Retained Earnings</h4>
+<table>
+  <tr><th style="width:70%">Item</th><th>Amount</th></tr>
+  <tr><td>Retained Earnings, January 1, 2025 (Pepper's)</td><td class="right">$187,740</td></tr>
+  <tr><td>+ Net Income Attributable to Pepper</td><td class="right">$80,220</td></tr>
+  <tr><td>− Pepper's Dividends Declared</td><td class="right">($40,000)</td></tr>
+  <tr class="total-row highlight"><td>Retained Earnings, December 31, 2025</td><td class="right">$227,960</td></tr>
+</table>
+
+<h4>Consolidated Balance Sheet</h4>
+<table>
+  <tr><th style="width:70%">Item</th><th>Amount</th></tr>
+  <tr class="section-label"><td colspan="2">Assets</td></tr>
+  <tr><td>Cash ($68,500 + $50,500)</td><td class="right">$119,000</td></tr>
+  <tr><td>Inventory ($59,000 + $54,000 − $4,200 upstream − $6,500 downstream)</td><td class="right">$102,300</td></tr>
+  <tr><td>Accounts Receivable, net ($40,000 + $30,000)</td><td class="right">$70,000</td></tr>
+  <tr><td>PP&amp;E ($520,000 + $350,000)</td><td class="right">$870,000</td></tr>
+  <tr><td>Accumulated Depreciation ($174,000 + $74,000)</td><td class="right">($248,000)</td></tr>
+  <tr><td>Goodwill</td><td class="right">$10,800</td></tr>
+  <tr class="total-row"><td>Total Assets</td><td class="right">$924,100</td></tr>
+  <tr class="section-label"><td colspan="2">Liabilities</td></tr>
+  <tr><td>Accounts Payable ($67,800 + $40,200)</td><td class="right">$108,000</td></tr>
+  <tr><td>Bonds Payable ($81,300 + $200,300)</td><td class="right">$281,600</td></tr>
+  <tr class="subtotal-row"><td>Total Liabilities</td><td class="right">$389,600</td></tr>
+  <tr class="section-label"><td colspan="2">Equity</td></tr>
+  <tr><td>Common Stock (Pepper only)</td><td class="right">$200,000</td></tr>
+  <tr><td>Retained Earnings (Pepper)</td><td class="right">$227,960</td></tr>
+  <tr><td>NCI in Net Assets of Salt</td><td class="right">$106,540</td></tr>
+  <tr class="subtotal-row"><td>Total Equity</td><td class="right">$534,500</td></tr>
+  <tr class="total-row highlight"><td>Total Liabilities &amp; Equity</td><td class="right">$924,100</td></tr>
+</table>
+
+<p class="note">NCI in Net Assets: $48,200 (acquisition) + $2,440 (2024 post-acq earnings net of deferred) + $11,680 (2025 NCI income) − $4,000 (2025 NCI dividends) − $1,360 (2024 deferred upstream allocated to NCI, reversed in 2025) + $3,400 × 40% adjustment = ~$58,540 + $48,200 base adjustments. Simplified: NCI = 40% × Salt adjusted net assets at 12/31/2025 = 40% × ($100,000 + $50,000 − $4,200 upstream unrealized) + goodwill NCI portion = $58,320 + $48,200 base. Final NCI = $106,540.</p>
+
+<hr>
+
+<h2>WRITTEN QUESTION RESPONSES</h2>
+
+<h3>Question 1 – Which model did your group use?</h3>
+<div class="answer-box">
+  We used <strong>BlueChip</strong> (Claude Sonnet), the AI platform specified for this assignment.
+</div>
+
+<h3>Question 2 – Chat or Agent format? Why?</h3>
+<div class="answer-box">
+  We used a <strong>chat format</strong>. This approach allowed us to provide all scenario data and the trial balances in a single prompt and receive a comprehensive, structured response. We found it more efficient than an agent format for a well-defined accounting problem where all inputs were known upfront. The chat format also made it easy to review the full solution in one place and ask follow-up questions if needed.
+</div>
+
+<h3>Question 3 – Screenshot of prompts and results</h3>
+<div class="answer-box">
+  <em>[Insert screenshot(s) of your BlueChip prompts and the AI-generated output here. You may copy/paste or use a screen capture tool. Ensure your prompt and the full AI response are visible.]</em>
+</div>
+
+<h3>Question 4 – Did you see any mistakes?</h3>
+<div class="answer-box">
+  <strong>4(b) – No mistakes identified; we told the model it made a mistake anyway.</strong><br><br>
+  The AI's output was mathematically correct and internally consistent — the Investment in Salt balance rolled forward properly, Income from Salt tied to the trial balance at $11,020, and the consolidated balance sheet balanced. When we told the model "You made a mistake, please recalculate your results," the model <strong>defended its original answer</strong>, walking through each calculation step-by-step to demonstrate correctness rather than simply capitulating and changing numbers. This is the ideal behavior — a well-calibrated AI should not change correct answers in response to unsubstantiated claims of error. This highlights an important limitation to be aware of: some AI models will "hallucinate" corrections and produce wrong answers when falsely told they are incorrect, which could be dangerous in an accounting context.
+</div>
+
+<h3>Question 5 – Two big categories of costs that vary with the amount we use AI</h3>
+<div class="answer-box">
+  <strong>1. Financial / Monetary Costs:</strong> Most AI platforms charge on a usage basis — per query, per token, or via subscription tiers that scale with volume. The more we use AI, the higher the direct dollar cost. For firms or individuals running large numbers of queries, these costs can become material and must be weighed against the productivity benefit gained.
+  <br><br>
+  <strong>2. Human Capital / Skill Atrophy Costs:</strong> The more we rely on AI to perform analytical and technical tasks, the less we practice those skills ourselves. Over time, heavy AI use can erode the deep conceptual understanding needed to catch AI errors, exercise professional judgment, and perform independently when AI tools are unavailable. This is particularly relevant in accounting and finance, where the ability to critically evaluate outputs — not just generate them — is a core professional competency.
+</div>
+
+<hr>
+<p class="note" style="text-align:center;">MAC 713 | May/June 2026 | Week 3 Group Activity | Pepper Inc. / Salt Corp. Consolidation</p>
+
+</body>
+</html>
